@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const scrapController = require('../application/controllers/scrap.controller');
+const indexController = require('../application/controllers/index.controller');
 const rp = require('request-promise');
 const cheerio = require('cheerio');
 const options = {
@@ -17,6 +17,6 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-router.get("/scrap",scrapController.scrap);
+router.get("/uploadImage", indexController.uploadImage);
 router.post("/search",scrapController.search);
 router.get("/reset",scrapController.reset);
