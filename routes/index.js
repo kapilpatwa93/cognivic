@@ -18,5 +18,4 @@ router.get('/', function(req, res, next) {
 module.exports = router;
 
 router.get("/uploadImage", indexController.uploadImage);
-router.post("/search",scrapController.search);
-router.get("/reset",scrapController.reset);
+
