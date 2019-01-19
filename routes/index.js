@@ -9,6 +9,13 @@ const options = {
         return cheerio.load(body);
     }
 };
+const path = require("path");
+const fs = require("fs");
+const multer = require('multer');
+const upload = multer({
+    dest: "./public/uploads/images"
+
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -17,5 +24,7 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-router.get("/uploadImage", indexController.uploadImage);
+router.post("/uploadSource",upload.single('file'), indexController.uploadSourceImage);
+router.post("/uploadTarget",upload.single('file'), indexController.uploadTargetImage);
+router.get('/testVision', indexController.testVision);
 

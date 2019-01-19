@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "theta-cell-229110",
+  "private_key_id": "5c4da05090ca7567daeb43f191e6047b486ded0e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDkZawouSvBvRAd\n98Bg36Q3Rs/tP5ztWVd2HyFVMnigD3RSnnvjae8W0LQyX17ARdXyvl7x/awCbtlg\nCS/JF1dAMbpjcvugFXYiK6ZT7A/AZyTecYaO0M5mMaK2ILDE7zP+sz47wzavD0NL\nJLvFM2I0pjQENXrfsJbBb7M5Rvor3ZLQIPuZPjss2DjIWC7URv1xZBnjiLDL+EwX\nwSEoDN0ZBK32Xp8cnd42meyH6ZwPBTOKo1o4cxdv0PD1tcfZ6IAS9mG2jvUbKVvr\nuii0uGu52wC3DT1TjbMYV/1ejitQo3LEJBDzVNhJtP7Ikv4a5XFPczPgE5HVt2G7\n/fwTgACzAgMBAAECggEAFAXr2Wgec24xRwdM2NFScrwlB24fwlkmR0dEY1U46QNh\n1cpqHw5O9SeX3KCqzF1y+8R/y2RLW60/JmG3zD/dGNYjOou+jpLDGAzOmKXl3Z7N\nRykZvFSG+8OXObNU+/bijo5FQvUCysciRaizQ38VOXtmrQXJP2oaVVwHENrtnMG2\nL392m5atd5yBNfYfVeiEps6xntZlXxSHCsxJJH48Z6WMmxgQ6MWnPaj+r6SOKKBI\n0xmvflrvGWTaEG+e8yqE4G9T/H50uKaQbzSxndrsh18TZA6yq1To8ZLG0yoMAe55\nZe2gXLbWmd7hHWpoQSIxf51fTJSW5+338gBA86Vc3QKBgQD39riGM0w1fOEzesPV\nSWBvLVjw7WAJXoVsIoNs8Z7q23lWElVxRN9QLEXEg7oIsJPhdI913v82lMOL/p2k\naSGrgKam7aKiTGpG7JUtDNHvFrTpViVmCHQRCyeH3/D8vrQC1OuLU+rTaMdwz5P4\nGRmJG0nQkyLk2VrjFLhe/XE/vwKBgQDrzJ0Y9pXxiO9A5iYUylVdh1S55x7Ggb+v\nWr+n7MKyjU18zK43c7CQQRQL1AJnc0aBAm2Db94rj/+3pkKmiRshKpjIoKs3d6XW\nP7k7FHulMWQf7W7nfQW0NYaGS4kZ/GHBO3pz6ybE4tKNzbVdIrnmeX9dG/o2IVOc\nfEQUGfE8DQKBgQCIr2ncIB7cRTBmjj+xLLeJ0Xd7p34O7BmkGApWXYJ6d+0UsxqC\nS7LFoQH8Z5h+/ccmunfyQ7BvR+XbH8mKPaGfxlUXI1tJF9JlsjgxEyYOI3gqP6Bx\n9Cr20i1CSwGucPkNro0Ayothahq2ZtZsJnnbCD3SSakseVwOXPec9RweRQKBgF/J\n1Duy2ECxbvf/RpMFit4evsVyZScgyDy08cyGuqUMD+FVyKQQJDbFqR4Q9xUNWCPK\nV7CgPjGWIrx5FvROGC5F/qDp3AQBX+YEJvwgGwaFZPYvXvE88Zc+czKU9tIOm6uC\nvQDgEvTCa+RdH4MBO2GsE5hAaEmbCjs0o/dCfqP1AoGALD/UsPVvR1GKLmlXp1+Y\n1mpRfd29MdmYzq8FstFzHwb86Dkasq3fI2kEovySvy2tibOy9DYgfsR/KPAr4DYo\nrAQ6nqH+x4et5onBUWQAQbF8LKye190dJbHpaifJxta96ELS4NZRY/4uK4qjyH3B\nBZ2+wcFqpCA1oGp9BH6CHt4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cognivic@theta-cell-229110.iam.gserviceaccount.com",
+  "client_id": "102061166748137168659",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cognivic%40theta-cell-229110.iam.gserviceaccount.com"
+}

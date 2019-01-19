@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@google-cloud/vision": "^0.24.0",
     "body-parser": "~1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "cookie-parser": "~1.4.3",
@@ -17,9 +18,11 @@
     "jade": "~1.11.0",
     "mongoose": "^5.0.5",
     "morgan": "~1.9.0",
+    "multer": "^1.4.1",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "~1.10.0"

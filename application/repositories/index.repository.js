@@ -6,13 +6,31 @@ const ServiceCentre = mongoose.model('ServiceCentre');
 const httpStatus = require('http-status');
 const request = require('request-promise');
 const cheerio = require('cheerio');
-let pageCount = 1;
-const options = {
+const path = require("path");
+const fs = require("fs");
+const multer = require('multer');
+const upload = multer({
+    dest: "./public/uploads/images"
 
-    transform: function (body) {
-        return cheerio.load(body);
+});
+module.exports.uploadImage = async (data, type) => {
+   try {
+        const tempPath = data.file.path;
+        const targetPath = path.join(`./public/uploads/images/${type}.png`);
+        if (path.extname(data.file.originalname).toLowerCase() === ".png" || path.extname(data.file.originalname).toLowerCase() === ".png") {
+            const file = fs.renameSync(tempPath, targetPath);
+            console.log("file",file);
+            return "uploaded successfully";
+        } else {
+            fs.unlink(tempPath, err => {
+                if (err) {
+                    throw new Error(err);
+                }
+                throw new Error("Invalid Format");
+            });
+        }
+    } catch(err) {
+       console.log("here error");
+       throw new Error(err);
     }
-};
-module.exports.uploadImage = (data) => {
-    console.log("write logic to save image here");
 }
