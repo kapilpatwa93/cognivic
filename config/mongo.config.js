@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 let gracefulShutdown;
-let dbURI = 'mongodb://cognivic:cognivic@ds261644.mlab.com:61644/cognivic';
+let dbURI = 'mongodb://cognivic:cognivic123@ds261644.mlab.com:61644/cognivic';
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
 }
 
+console.log(dbURI);
 mongoose.connect(dbURI);
 
 // CONNECTION EVENTS
