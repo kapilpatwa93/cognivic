@@ -21,7 +21,7 @@ module.exports.uploadImage = async (data, type) => {
         const targetPath = path.join(`./public/uploads/images/${type}.jpg`);
         if (path.extname(data.file.originalname).toLowerCase() === ".jpg" || path.extname(data.file.originalname).toLowerCase() === ".jpeg") {
             const file = fs.renameSync(tempPath, targetPath);
-            visionRepository.analyzeImage(type);
+            await visionRepository.analyzeImage(type);
             www.io.emit('result', {match : true,labels: ["apple", "banana"]});
             return "uploaded successfully";
         }
