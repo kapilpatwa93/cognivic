@@ -28,7 +28,16 @@ module.exports.uploadTargetImage = (req, res, next) => {
     });
 };
 module.exports.testVision = (req, res, next) => {
-    visionRepository.testVision(req.query).then((category) => {
+    visionRepository.analyzeImage(req.query).then((category) => {
+        customHelper.sendJsonResponse(res, httpStatus.OK, category, null);
+        return;
+    }).catch((err) => {
+        customHelper.sendJsonError(res, err);
+        return;
+    });
+};
+module.exports.checkMatch = (req, res, next) => {
+    visionRepository.compareImage(req.query).then((category) => {
         customHelper.sendJsonResponse(res, httpStatus.OK, category, null);
         return;
     }).catch((err) => {

@@ -26,5 +26,6 @@ module.exports = router;
 
 router.post("/uploadSource",upload.single('file'), indexController.uploadSourceImage);
 router.post("/uploadTarget",upload.single('file'), indexController.uploadTargetImage);
+router.post("/checkMatch", indexController.checkMatch);
 router.get('/testVision', indexController.testVision);
 
